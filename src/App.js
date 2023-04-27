@@ -3,21 +3,21 @@ import React from 'react';
 // import { Formic } from './Formic';
 // import { Yupp } from './Yupp';
 // import { Rhf } from './Rhf';
-// import { ReduxOne } from './ReduxOne';
+import { ReduxOne } from './ReduxOne';
 import './/index.css'
-import { ReduxTwo } from './ReduxTwo'
-import { compose, createStore, applyMiddleware } from 'redux';
-import { rootReducer } from './redux/rootReducer';
-import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
+// import { ReduxTwo } from './ReduxTwo'
+// import { compose, createStore, applyMiddleware } from 'redux';
+// import { rootReducer } from './redux/rootReducer';
+// import { Provider } from 'react-redux';
+// import thunk from 'redux-thunk';
 
-const store = createStore(
-    rootReducer,
-    compose(
-        applyMiddleware(thunk),
-        window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-    )
-    );
+// const store = createStore(
+//     rootReducer,
+//     compose(
+//         applyMiddleware(thunk),
+//         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+//     )
+//     );
 
 class App extends React.Component {
     render() {
@@ -27,10 +27,10 @@ class App extends React.Component {
                 {/* <Formic /> */}
                 {/* <Yupp /> */}
                 {/* <Rhf /> */}
-                {/* <ReduxOne /> */}
-                <Provider store={store}>
+                <ReduxOne />
+                {/* <Provider store={store}>
                     <ReduxTwo />
-                </Provider>
+                </Provider> */}
             </div>
         )
     }

@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
 // import { Post } from './components/Post';
-import { FetchPostsTwo } from './components_2/FetchPostsTwo';
+import { FetchPostsTwo } from './components/FetchPostsTwo';
 import { Form } from './components/Form';
-import PostsTwo from './components_2/PostsTwo';
+import PostsTwo from './components/PostsTwo';
 
 export const ReduxTwo = () => {
 

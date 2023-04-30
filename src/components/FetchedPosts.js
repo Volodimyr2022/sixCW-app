@@ -1,12 +1,9 @@
-import React from 'react'
-import { Post } from "./Post";
+import { Post } from "./Post"
 
-
-export const Posts = ({ posts }) => {
+export const FetchedPosts = ({ posts }) => {
     if(!posts.length){
-        return <div> Пока постов нет :( </div>
+        return <div> Постов пока нет :( </div>
     }
-
     return(
         <div>
             {posts.map((post) => (
@@ -15,5 +12,3 @@ export const Posts = ({ posts }) => {
         </div>
     )
 }
-
-

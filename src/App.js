@@ -3,21 +3,12 @@ import React from 'react';
 // import { Formic } from './Formic';
 // import { Yupp } from './Yupp';
 // import { Rhf } from './Rhf';
-import { ReduxOne } from './ReduxOne';
+// import { ReactPost } from './ReactPost';
 import './/index.css'
-// import { ReduxTwo } from './ReduxTwo'
-// import { compose, createStore, applyMiddleware } from 'redux';
-// import { rootReducer } from './redux/rootReducer';
-// import { Provider } from 'react-redux';
-// import thunk from 'redux-thunk';
+import { ReduxTool } from './ReduxTool';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
-// const store = createStore(
-//     rootReducer,
-//     compose(
-//         applyMiddleware(thunk),
-//         window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
-//     )
-//     );
 
 class App extends React.Component {
     render() {
@@ -27,10 +18,10 @@ class App extends React.Component {
                 {/* <Formic /> */}
                 {/* <Yupp /> */}
                 {/* <Rhf /> */}
-                <ReduxOne />
-                {/* <Provider store={store}>
-                    <ReduxTwo />
-                </Provider> */}
+                {/* <ReactPost /> */}
+                <Provider store={store}>
+                 <ReduxTool />
+                </Provider>
             </div>
         )
     }
